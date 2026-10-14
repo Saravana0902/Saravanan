@@ -1,0 +1,129 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Saravanan M | Trizetto Facets, .NET and PL/SQL</title>
+<meta name="description" content="Saravanan M, Healthcare IT developer specializing in Trizetto Facets, .NET (C#) and Oracle PL/SQL.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F2F7F8;--surface:#fff;--ink:#10252C;--muted:#4D6670;--teal:#0F6E7C;--deep:#0A3A44;--amber:#E9A62B;--line:#D3E1E5;--btn-ink:#fff}
+@media(prefers-color-scheme:dark){:root{--bg:#0B1A1F;--surface:#112830;--ink:#E6F1F3;--muted:#9BB5BC;--teal:#4FC3D3;--deep:#06141A;--amber:#F2B845;--line:#21414A;--btn-ink:#06141A}}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{font:17px/1.65 'IBM Plex Sans',system-ui,sans-serif;background:var(--bg);color:var(--ink)}
+h1,h2,h3{font-family:'Bricolage Grotesque','IBM Plex Sans',sans-serif;line-height:1.15;letter-spacing:-.02em}
+h1{font-size:clamp(2.4rem,6vw,4.4rem)}
+h2{font-size:clamp(1.8rem,3.5vw,2.5rem);margin-bottom:1.2rem}
+h3{font-size:1.2rem;margin-bottom:.3rem}
+a{color:var(--teal)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+header{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{font:700 1.15rem 'Bricolage Grotesque',sans-serif;text-decoration:none;color:var(--ink)}
+.brand i{color:var(--amber);font-style:normal}
+nav{display:flex;gap:4px}
+nav a{padding:8px 12px;border-radius:8px;text-decoration:none;color:var(--muted);font-size:.95rem}
+nav a:hover,nav a.on{color:var(--ink);box-shadow:inset 0 -2px 0 var(--amber)}
+#menu{display:none;background:none;border:1px solid var(--line);color:var(--ink);padding:6px 12px;border-radius:8px;font:inherit}
+@media(max-width:820px){#menu{display:block}nav{display:none;position:absolute;top:64px;left:0;right:0;background:var(--bg);flex-direction:column;padding:12px 24px;border-bottom:1px solid var(--line)}nav.open{display:flex}}
+.hero{padding:80px 0 30px}
+.lead{font-size:1.25rem;max-width:34em;color:var(--muted);margin:20px 0 28px}
+.btn{display:inline-block;padding:12px 22px;border-radius:8px;background:var(--teal);color:var(--btn-ink);text-decoration:none;font-weight:600;margin:0 10px 10px 0}
+.btn.alt{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+.ecg{width:100%;height:90px;margin-top:30px}
+.ecg path{fill:none;stroke:var(--teal);stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1600;stroke-dashoffset:1600;animation:draw 3s ease-out forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+@media(prefers-reduced-motion:reduce){.ecg path{animation:none;stroke-dashoffset:0}html{scroll-behavior:auto}}
+section{padding:56px 0}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px}
+.stat{border-left:3px solid var(--amber);padding-left:16px}
+.stat b{display:block;font:700 2.6rem 'Bricolage Grotesque',sans-serif;color:var(--teal);line-height:1}
+.stat span{color:var(--muted);font-size:.95rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:22px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:26px}
+.card.tall{border-top:4px solid var(--teal)}
+.card p{color:var(--muted)}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;list-style:none;padding:0}
+.tags li{font-size:.85rem;padding:3px 11px;border-radius:99px;background:var(--bg);border:1px solid var(--line)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+@media(max-width:760px){.two{grid-template-columns:1fr}}
+.list{padding-left:1.2rem}.list li{margin-bottom:8px}
+.timeline{border-left:2px solid var(--line);margin-left:8px;padding-left:28px}
+.timeline article{position:relative;margin-bottom:34px}
+.timeline article::before{content:"";position:absolute;left:-37px;top:8px;width:14px;height:14px;border-radius:50%;background:var(--amber);border:3px solid var(--bg)}
+.timeline time{color:var(--teal);font-weight:600;font-size:.95rem}
+.timeline ul{padding-left:1.2rem;margin-top:10px}.timeline li{margin-bottom:8px}
+.contact-row{display:flex;gap:14px;align-items:baseline;padding:16px 0;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.contact-row span{width:90px;color:var(--muted)}
+.contact-row a{font-size:1.1rem;font-weight:600;word-break:break-all}
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:.9rem}
+</style></head><body>
+<header><div class="wrap"><a class="brand" href="#top">Saravanan M<i>.</i></a>
+<button id="menu" aria-expanded="false" aria-controls="nav">Menu</button>
+<nav id="nav" aria-label="Main"><a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a></nav></div></header>
+<main id="top">
+<div class="wrap hero">
+<h1>I keep US health insurance claims moving, accurately.</h1>
+<p class="lead">Hi, I'm Saravanan. For 5+ years at Cognizant I have built and supported Trizetto Facets systems with .NET (C#) and Oracle PL/SQL for high-volume US payers.</p>
+<a class="btn" href="#projects">See my work</a><a class="btn alt" href="#contact">Get in touch</a>
+<svg class="ecg" viewBox="0 0 1000 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 50 H180 L205 50 L225 18 L250 82 L272 50 H430 L450 50 L470 30 L490 50 H640 L665 50 L685 8 L712 86 L735 50 H1000"/></svg>
+</div>
+<section style="padding-top:30px"><div class="wrap"><div class="stats">
+<div class="stat"><b>5+</b><span>years in Healthcare IT</span></div>
+<div class="stat"><b>30%</b><span>faster claim batch processing</span></div>
+<div class="stat"><b>15%</b><span>fewer enrollment mismatch errors</span></div>
+<div class="stat"><b>100%</b><span>SLA compliance on critical defects</span></div>
+</div></div></section>
+
+<section id="about"><div class="wrap two">
+<div><h2>About me</h2><p>I am a result-oriented Healthcare IT professional based in Madurai, Tamil Nadu, specializing in Trizetto Facets, .NET (C#) and Oracle PL/SQL. I work on claims adjudication, member enrollment and provider data flows.</p><p style="margin-top:14px">I have developed custom DLL extensions and automated XML data validation, improving accuracy and processing speed for high-volume US health insurance clients.</p></div>
+<div><h2>At a glance</h2><ul class="list">
+<li><strong>Role:</strong> Associate, Cognizant Technology Solutions</li>
+<li><strong>Focus:</strong> Facets Claims, Enrollment, Billing, Provider, Benefits, Eligibility</li>
+<li><strong>Education:</strong> B.Tech, Computer Science and Engineering, Kalasalingam Academy of Research and Education (2020, CGPA 7.24)</li>
+<li><strong>Languages:</strong> Tamil (native), English (professional working proficiency)</li>
+</ul></div></div></section>
+
+<section id="experience"><div class="wrap"><h2>Experience</h2><div class="timeline"><article>
+<time>Nov 2020 to present</time><h3>Associate, Cognizant Technology Solutions</h3><p>Chennai, India</p>
+<ul>
+<li>Enhanced and maintained Facets Claims and Enrollment modules, tailoring workflows to complex US healthcare requirements and state-specific mandates.</li>
+<li>Engineered 32-bit and 64-bit Facets DLL extensions in C# to integrate the platform with third-party vendor applications and external portals.</li>
+<li>Built a reusable XML Scrubber in C# to validate and transform inbound healthcare data, cutting manual intervention.</li>
+<li>Designed and tuned PL/SQL packages, procedures and functions for a 30% gain in claims batch speed.</li>
+<li>Provided L2/L3 support and deep-dive RCA for high-priority incidents during peak Open Enrollment.</li>
+<li>Partnered with Business Analysts and onsite teams on UAT and production releases.</li>
+</ul></article></div></div></section>
+
+<section id="projects"><div class="wrap"><h2>Projects and achievements</h2><div class="grid">
+<div class="card tall"><h3>Reusable XML Scrubber</h3><p>A C# tool that validates and transforms inbound healthcare data before it reaches downstream systems, preventing corruption and manual fixes.</p><ul class="tags"><li>C#</li><li>XML/XSLT</li><li>Data validation</li></ul></div>
+<div class="card tall"><h3>Facets DLL extensions</h3><p>32-bit and 64-bit .NET extensions that connect Facets to vendor applications and external portals.</p><ul class="tags"><li>.NET</li><li>C#</li><li>Integration</li></ul></div>
+<div class="card tall"><h3>Claims batch tuning</h3><p>Reduced claim processing latency by 30% through SQL query optimization and batch job restructuring.</p><ul class="tags"><li>PL/SQL</li><li>Oracle</li><li>Performance tuning</li></ul></div>
+<div class="card tall"><h3>Enrollment validation</h3><p>Automated validation scripts reduced enrollment mismatch errors by 15% within six months.</p><ul class="tags"><li>EDI 834</li><li>Automation</li></ul></div>
+<div class="card tall"><h3>Facets customization</h3><p>Claims and Enrollment workflow changes that meet state-specific mandates and complex business rules.</p><ul class="tags"><li>Facets Workbench</li><li>Claims</li><li>Enrollment</li></ul></div>
+<div class="card tall"><h3>Production support</h3><p>L2/L3 incident handling and RCA through peak Open Enrollment, with 100% SLA compliance on critical production defects.</p><ul class="tags"><li>RCA</li><li>Incident management</li></ul></div>
+</div></div></section>
+
+<section id="skills"><div class="wrap"><h2>Skills</h2><div class="grid">
+<div class="card"><h3>Facets expertise</h3><ul class="tags"><li>Claims Processing</li><li>Member Enrollment</li><li>Billing</li><li>Provider</li><li>Benefits</li><li>Eligibility</li></ul></div>
+<div class="card"><h3>Technical stack</h3><ul class="tags"><li>C#</li><li>.NET Framework</li><li>PL/SQL</li><li>Oracle SQL</li><li>XML/XSLT</li></ul></div>
+<div class="card"><h3>Healthcare standards</h3><ul class="tags"><li>EDI 834</li><li>EDI 837</li><li>XML Scrubbing</li><li>HIPAA Compliance</li><li>Claims Adjudication</li></ul></div>
+<div class="card"><h3>Tools</h3><ul class="tags"><li>Facets Workbench</li><li>Visual Studio</li><li>Git</li><li>Oracle Database</li><li>SQL Developer</li></ul></div>
+<div class="card"><h3>Specialized</h3><ul class="tags"><li>L2/L3 Production Support</li><li>Root Cause Analysis</li><li>Performance Tuning</li></ul></div>
+</div></div></section>
+
+<section id="contact"><div class="wrap" style="max-width:760px"><h2>Contact</h2><p style="color:var(--muted)">I am open to conversations about new roles in Healthcare IT. Email is the fastest way to reach me.</p>
+<div class="contact-row"><span>Email</span><a href="mailto:saravana0902murugan@gmail.com">saravana0902murugan@gmail.com</a></div>
+<div class="contact-row"><span>Phone</span><a href="tel:+918072940826">+91 80729 40826</a></div>
+<div class="contact-row"><span>LinkedIn</span><a href="https://linkedin.com/in/saravanan-m-998518190">linkedin.com/in/saravanan-m-998518190</a></div>
+<div class="contact-row"><span>Location</span><strong>Madurai, Tamil Nadu, India</strong></div>
+</div></section>
+</main>
+<footer><div class="wrap">&copy; 2026 Saravanan M &middot; Healthcare IT, Trizetto Facets &amp; .NET</div></footer>
+<script>
+var b=document.getElementById("menu"),n=document.getElementById("nav");
+b.addEventListener("click",function(){var o=n.classList.toggle("open");b.setAttribute("aria-expanded",o)});
+n.addEventListener("click",function(e){if(e.target.tagName==="A"){n.classList.remove("open");b.setAttribute("aria-expanded","false")}});
+var links=[].slice.call(n.querySelectorAll("a"));
+if("IntersectionObserver" in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(l){l.classList.toggle("on",l.getAttribute("href")==="#"+e.target.id)})}})},{rootMargin:"-40% 0px -55% 0px"});
+links.forEach(function(l){var s=document.querySelector(l.getAttribute("href"));if(s)io.observe(s)})}
+</script></body></html>
